@@ -111,7 +111,7 @@ const Navbar = () => {
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0]">
             <a
               className="flex justify-between items-center w-full text-gray-300"
-              href="mailto:saurabhkuurve100@gmail.com"
+              href="mailto:saurabhkurve100@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -132,7 +132,7 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Social icons */}
-      <div className="lg:hidden fixed bottom-0 w-full bg-[#0a192f] flex justify-around py-2">
+      <div className="lg:hidden fixed bottom-0 w-full bg-[#0a192f] flex items-center justify-around py-2">
         <a
           className="text-gray-300"
           href="https://www.linkedin.com/in/saurabhkurve/"
@@ -151,7 +151,7 @@ const Navbar = () => {
         </a>
         <a
           className="text-gray-300"
-          href="mailto:saurabhkuurve100@gmail.com"
+          href="mailto:saurabhkurve100@gmail.com"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -159,7 +159,7 @@ const Navbar = () => {
         </a>
         <a
           className="text-gray-300"
-          href="/assets/cv/Saurabh_Kurve_Resume.pdf" // Ensure this path is correct
+          href="/cv/Saurabh_Kurve_Resume.pdf" // Ensure this path is correct
           target="_blank"
           rel="noopener noreferrer"
         >
