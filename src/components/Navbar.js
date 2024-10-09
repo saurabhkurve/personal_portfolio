@@ -130,6 +130,42 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
+
+      {/* Mobile Social icons */}
+      <div className="lg:hidden fixed bottom-0 w-full bg-[#0a192f] flex justify-around py-2">
+        <a
+          className="text-gray-300"
+          href="https://www.linkedin.com/in/saurabhkurve/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaLinkedin size={30} />
+        </a>
+        <a
+          className="text-gray-300"
+          href="https://github.com/saurabhkurve"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaGithub size={30} />
+        </a>
+        <a
+          className="text-gray-300"
+          href="mailto:saurabhkuurve100@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <HiOutlineMail size={30} />
+        </a>
+        <a
+          className="text-gray-300"
+          href="/assets/cv/Saurabh_Kurve_Resume.pdf" // Ensure this path is correct
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <HiOutlineDocument size={30} />
+        </a>
+      </div>
     </div>
   );
 };
