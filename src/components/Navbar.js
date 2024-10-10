@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineDocument, HiOutlineMail } from "react-icons/hi";
-import { FaCoffee } from 'react-icons/fa';
+import { FaCoffee } from "react-icons/fa";
 import logo from "../assets/sklogo.png";
 import { Link } from "react-scroll";
 
@@ -19,45 +19,100 @@ const Navbar = () => {
       {/* menus */}
       <ul className="hidden md:flex ">
         <li>
-          <Link to="home" smooth={true} duration={500}>
+          <Link
+            to="home"
+            smooth={true}
+            duration={500}
+            className="hover:text-pink-600"
+            activeClass="text-pink-600 underline"
+            spy={true}
+          >
             Home
           </Link>
         </li>
         <li>
-          <Link to="about" smooth={true} duration={500}>
+          <Link
+            to="about"
+            smooth={true}
+            duration={500}
+            className="hover:text-pink-600"
+            activeClass="text-pink-600 underline"
+            spy={true}
+          >
             About
           </Link>
         </li>
         <li>
-          <Link to="skills" smooth={true} duration={500}>
+          <Link
+            to="skills"
+            smooth={true}
+            duration={500}
+            className="hover:text-pink-600"
+            activeClass="text-pink-600 underline"
+            spy={true}
+          >
             Skills
           </Link>
         </li>
         <li>
-          <Link to="work" smooth={true} duration={500}>
+          <Link
+            to="work"
+            smooth={true}
+            duration={500}
+            className="hover:text-pink-600"
+            activeClass="text-pink-600 underline"
+            spy={true}
+          >
             Work
           </Link>
         </li>
         <li>
-          <Link to="blog" smooth={true} duration={500}>
+          <Link
+            to="blog"
+            smooth={true}
+            duration={500}
+            className="hover:text-pink-600"
+            activeClass="text-pink-600 underline"
+            spy={true}
+          >
             Blogs
           </Link>
         </li>
         <li>
-          <Link to="contact" smooth={true} duration={500}>
+          <Link
+            to="contact"
+            smooth={true}
+            duration={500}
+            className="hover:text-pink-600"
+            activeClass="text-pink-600 underline"
+            spy={true}
+          >
             Contact
           </Link>
         </li>
         <div className="bmc-button-container">
-            <a href="https://www.buymeacoffee.com/saurabhkurh" target="_blank" rel="noopener noreferrer">
-              <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style={{ height: '30px', width: 'auto', "margin-top":"-3px" ,"margin-left":"10px"}} />
-            </a>
-          </div>
+          <a
+            href="https://www.buymeacoffee.com/saurabhkurh"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
+              alt="Buy Me A Coffee"
+              style={{
+                height: "30px",
+                width: "auto",
+                "margin-top": "-3px",
+                "margin-left": "10px",
+              }}
+            />
+          </a>
+        </div>
       </ul>
 
       {/* hamburger */}
       <div onClick={handleClick} className="md:hidden z-10">
-        {!nav ? <FaBars size={30}/> : <FaTimes />}
+        {!nav ? <FaBars size={30} /> : <FaTimes />}
       </div>
 
       {/* mobilemenu */}
@@ -99,10 +154,18 @@ const Navbar = () => {
           </Link>
         </li>
         <div className="bmc-button-container">
-            <a href="https://www.buymeacoffee.com/saurabhkurh" target="_blank" rel="noopener noreferrer">
-              <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style={{ height: '45px', width: 'auto', "margin-top":"10px"}} />
-            </a>
-          </div>
+          <a
+            href="https://www.buymeacoffee.com/saurabhkurh"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
+              alt="Buy Me A Coffee"
+              style={{ height: "45px", width: "auto", "margin-top": "10px" }}
+            />
+          </a>
+        </div>
       </ul>
 
       {/* social icons */}
@@ -141,9 +204,9 @@ const Navbar = () => {
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]">
             <a
               className="flex justify-between items-center w-full text-gray-300"
-              href="/cv/Saurabh_Kurve_Resume.pdf" 
-              target="_blank" 
-              rel="noopener noreferrer" 
+              href="/cv/Saurabh_Kurve_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Resume <HiOutlineDocument size={30} />
             </a>
@@ -197,13 +260,13 @@ const Navbar = () => {
           <HiOutlineDocument size={30} />
         </a>
         <a
-            className="text-gray-300"
-            href="https://buymeacoffee.com/saurabhkurh"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaCoffee size={30} />
-          </a>
+          className="text-gray-300"
+          href="https://buymeacoffee.com/saurabhkurh"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaCoffee size={30} />
+        </a>
       </div>
     </div>
   );
