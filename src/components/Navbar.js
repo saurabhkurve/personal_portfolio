@@ -26,6 +26,7 @@ const Navbar = () => {
             className="hover:text-pink-600"
             activeClass="text-pink-600 underline"
             spy={true}
+            offset={-80} 
           >
             Home
           </Link>
@@ -38,6 +39,7 @@ const Navbar = () => {
             className="hover:text-pink-600"
             activeClass="text-pink-600 underline"
             spy={true}
+            offset={-80} 
           >
             About
           </Link>
@@ -50,6 +52,7 @@ const Navbar = () => {
             className="hover:text-pink-600"
             activeClass="text-pink-600 underline"
             spy={true}
+            offset={-80} 
           >
             Skills
           </Link>
@@ -62,6 +65,7 @@ const Navbar = () => {
             className="hover:text-pink-600"
             activeClass="text-pink-600 underline"
             spy={true}
+            offset={-80} 
           >
             Work
           </Link>
@@ -74,6 +78,7 @@ const Navbar = () => {
             className="hover:text-pink-600"
             activeClass="text-pink-600 underline"
             spy={true}
+            offset={-80} 
           >
             Blogs
           </Link>
@@ -86,6 +91,7 @@ const Navbar = () => {
             className="hover:text-pink-600"
             activeClass="text-pink-600 underline"
             spy={true}
+            offset={-80} 
           >
             Contact
           </Link>
