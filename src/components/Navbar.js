@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <div className="fixed w-full h-[80px] font-bold flex justify-between items-center px-4 bg-[#0a192f] text-gray-300 z-50">
       <div className="-ml-1">
-        <img src={logo} alt="logo" style={{ width: "100px" }} />
+        <img src={logo} alt="logo" style={{ width: "90px" }} />
       </div>
 
       {/* menus */}
