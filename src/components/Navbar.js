@@ -23,10 +23,9 @@ const Navbar = () => {
             to="home"
             smooth={true}
             duration={500}
-            className="hover:text-pink-600"
-            activeClass="text-pink-600 underline"
-            spy={true}
-            offset={-80} 
+            className="hover:text-pink-600 hover:underline"
+            // activeClass="text-pink-600 underline"
+            spy={true} 
           >
             Home
           </Link>
@@ -36,10 +35,10 @@ const Navbar = () => {
             to="about"
             smooth={true}
             duration={500}
-            className="hover:text-pink-600"
-            activeClass="text-pink-600 underline"
+            className="hover:text-pink-600 hover:underline"
+            // activeClass="text-pink-600 underline"
             spy={true}
-            offset={-80} 
+
           >
             About
           </Link>
@@ -49,10 +48,9 @@ const Navbar = () => {
             to="skills"
             smooth={true}
             duration={500}
-            className="hover:text-pink-600"
-            activeClass="text-pink-600 underline"
+            className="hover:text-pink-600 hover:underline"
+            // activeClass="text-pink-600 underline"
             spy={true}
-            offset={-80} 
           >
             Skills
           </Link>
@@ -62,10 +60,9 @@ const Navbar = () => {
             to="work"
             smooth={true}
             duration={500}
-            className="hover:text-pink-600"
-            activeClass="text-pink-600 underline"
+            className="hover:text-pink-600 hover:underline"
+            // activeClass="text-pink-600 underline"
             spy={true}
-            offset={-80} 
           >
             Work
           </Link>
@@ -75,10 +72,9 @@ const Navbar = () => {
             to="blog"
             smooth={true}
             duration={500}
-            className="hover:text-pink-600"
-            activeClass="text-pink-600 underline"
+            className="hover:text-pink-600 hover:underline"
+            // activeClass="text-pink-600 underline"
             spy={true}
-            offset={-80} 
           >
             Blogs
           </Link>
@@ -88,10 +84,9 @@ const Navbar = () => {
             to="contact"
             smooth={true}
             duration={500}
-            className="hover:text-pink-600"
-            activeClass="text-pink-600 underline"
+            className="hover:text-pink-600 hover:underline"
+            // activeClass="text-pink-600 underline"
             spy={true}
-            offset={-80} 
           >
             Contact
           </Link>
