@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineDocument, HiOutlineMail } from "react-icons/hi";
-import { BsFillPersonLinesFill } from "react-icons/bs";
+import { FaCoffee } from 'react-icons/fa';
 import logo from "../assets/logo2.png";
 import { Link } from "react-scroll";
 
@@ -11,7 +11,7 @@ const Navbar = () => {
   const closeMenu = () => setNav(false);
 
   return (
-    <div className="fixed w-full h-[80px] font-bold flex justify-between items-center px-4 bg-[#0a192f] text-gray-300">
+    <div className="fixed w-full h-[80px] font-bold flex justify-between items-center px-4 bg-[#0a192f] text-gray-300 z-50">
       <div className="-ml-7">
         <img src={logo} alt="logo" style={{ width: "140px" }} />
       </div>
@@ -48,11 +48,16 @@ const Navbar = () => {
             Contact
           </Link>
         </li>
+        <div className="bmc-button-container">
+            <a href="https://www.buymeacoffee.com/saurabhkurh" target="_blank" rel="noopener noreferrer">
+              <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style={{ height: '30px', width: 'auto', "margin-top":"-3px" ,"margin-left":"10px"}} />
+            </a>
+          </div>
       </ul>
 
       {/* hamburger */}
       <div onClick={handleClick} className="md:hidden z-10">
-        {!nav ? <FaBars /> : <FaTimes />}
+        {!nav ? <FaBars size={30}/> : <FaTimes />}
       </div>
 
       {/* mobilemenu */}
@@ -93,6 +98,11 @@ const Navbar = () => {
             Contact
           </Link>
         </li>
+        <div className="bmc-button-container">
+            <a href="https://www.buymeacoffee.com/saurabhkurh" target="_blank" rel="noopener noreferrer">
+              <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style={{ height: '45px', width: 'auto', "margin-top":"10px"}} />
+            </a>
+          </div>
       </ul>
 
       {/* social icons */}
@@ -131,18 +141,29 @@ const Navbar = () => {
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]">
             <a
               className="flex justify-between items-center w-full text-gray-300"
-              href="/cv/Saurabh_Kurve_Resume.pdf" // Update this path to the actual location of your resume
-              target="_blank" // This will open the resume in a new tab
-              rel="noopener noreferrer" // This is a security measure when using target="_blank"
+              href="/cv/Saurabh_Kurve_Resume.pdf" 
+              target="_blank" 
+              rel="noopener noreferrer" 
             >
               Resume <HiOutlineDocument size={30} />
             </a>
           </li>
+          {/* <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#d0d30d]">
+            <a
+              className="flex justify-between items-center w-full text-black"
+              href="https://buymeacoffee.com/saurabhkurh"
+              target="_blank"
+              rel="noopener noreferrer"
+              
+            >
+              Buy me a coffee <FaCoffee size={30} className="text-black" />
+            </a>
+          </li> */}
         </ul>
       </div>
 
       {/* Mobile Social icons */}
-      <div className="lg:hidden fixed bottom-0 w-full bg-[#0a192f] flex items-center justify-around py-2">
+      <div className="lg:hidden fixed bottom-0 w-full bg-[#0a192f] flex items-center justify-around py-2 -ml-4">
         <a
           className="text-gray-300"
           href="https://www.linkedin.com/in/saurabhkurve/"
@@ -175,6 +196,14 @@ const Navbar = () => {
         >
           <HiOutlineDocument size={30} />
         </a>
+        <a
+            className="text-gray-300"
+            href="https://buymeacoffee.com/saurabhkurh"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaCoffee size={30} />
+          </a>
       </div>
     </div>
   );
