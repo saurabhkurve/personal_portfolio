@@ -5,6 +5,16 @@ const Blog = () => {
 
   const blogPosts = [
     {
+      title: "Top 5 Sites to Ace Your Tech Interviews ",
+      summary:
+        "A guide to the top five platforms for software engineers to practice coding, prepare for technical interviews, and enhance their chances of landing top tech jobs through structured learning, mock interviews, and peer support.",
+      date: "October 15, 2024",
+      link: "https://dev.to/saurabhkurve/top-5-sites-to-ace-your-tech-interviews-295e",
+      image:
+        "https://res.cloudinary.com/dzkwltgyd/image/upload/v1729014901/glif-run-outputs/l52kdr0j8m6reozc3aoo.jpg",
+        label: "New",
+    },
+    {
       title: "The Power of Lifelong Learning in Tech",
       summary:
         "A vital exploration of why continuous learning is essential for software engineers to adapt to rapid technological changes, enhance problem-solving skills, and drive career growth.",
@@ -12,7 +22,7 @@ const Blog = () => {
       link: "https://dev.to/saurabhkurve/the-power-of-lifelong-learning-in-tech-3pd2",
       image:
         "https://media.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fkib5p3t0o5afc6jbj89c.jpg",
-        popular: true,
+      popular: true,
     },
     {
       title: "16 Essential Problem-Solving Patterns",
@@ -50,7 +60,7 @@ const Blog = () => {
       link: "https://dev.to/saurabhkurve/data-structures-algorithms-a-beginners-guide-km6",
       image:
         "https://media.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F2nce40jcietkify5lm7k.jpg",
-        popular: true,
+      popular: true,
     },
     {
       title: "Fix the Bug, Ditch the Blame",
@@ -111,8 +121,13 @@ const Blog = () => {
               className="shadow-md shadow-[#040c16] hover:scale-105 duration-500 p-4 w-full flex flex-col justify-between relative"
             >
               {post.popular && (
-                <span className="absolute top-0 left-0 bg-pink-600 text-white px-2 py-1 text-xs font-bold">
+                <span className="absolute top-0 left-0 bg-pink-600 text-white px-2 py-1 text-xs  rounded-br-lg  font-bold">
                   Popular
+                </span>
+              )}
+              {post.label && (
+                <span className="absolute top-0 left-0 bg-blue-500 text-white text-xs px-2 py-1 rounded-br-lg font-bold">
+                  {post.label}
                 </span>
               )}
               <img
