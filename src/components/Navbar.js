@@ -4,6 +4,9 @@ import { HiOutlineDocument, HiOutlineMail } from "react-icons/hi";
 import { FaCoffee } from "react-icons/fa";
 import logo from "../assets/sklogo.png";
 import { Link } from "react-scroll";
+import { FaSquareXTwitter, FaTwitter } from "react-icons/fa6";
+import { ImTwitch, ImTwitter } from "react-icons/im";
+
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -192,6 +195,16 @@ const Navbar = () => {
               Github <FaGithub size={30} />
             </a>
           </li>
+          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#000000]">
+            <a
+              className="flex justify-between items-center w-full text-gray-300"
+              href="https://x.com/saurabh_kurve"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Twitter <FaSquareXTwitter size={30} />
+            </a>
+          </li>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0]">
             <a
               className="flex justify-between items-center w-full text-gray-300"
@@ -243,6 +256,14 @@ const Navbar = () => {
           rel="noopener noreferrer"
         >
           <FaGithub size={30} />
+        </a>
+        <a
+          className="text-gray-300"
+          href="https://x.com/saurabh_kurve"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaTwitter size={30} />
         </a>
         <a
           className="text-gray-300"
