@@ -5,6 +5,16 @@ const Blog = () => {
 
   const blogPosts = [
     {
+      title: "Surpass Overconfidence: Your Coding Journey Awaits",
+      summary:
+        "An encouraging guide on overcoming feelings of inadequacy in coding, highlighting the importance of consistent practice, embracing challenges, focusing on personal growth, and recognizing that coding is a long-term journey, not a race.",
+      date: "October 17, 2024",
+      link: "https://dev.to/saurabhkurve/surpass-overconfidence-your-coding-journey-awaits-3o4b",
+      image:
+        "https://dev-to-uploads.s3.amazonaws.com/uploads/articles/i9wcqdo1ymezas3nlqpq.jpg",
+      label: "New",
+    },
+    {
       title: "Top 5 Sites to Ace Your Tech Interviews ",
       summary:
         "A guide to the top five platforms for software engineers to practice coding, prepare for technical interviews, and enhance their chances of landing top tech jobs through structured learning, mock interviews, and peer support.",
@@ -12,7 +22,7 @@ const Blog = () => {
       link: "https://dev.to/saurabhkurve/top-5-sites-to-ace-your-tech-interviews-295e",
       image:
         "https://res.cloudinary.com/dzkwltgyd/image/upload/v1729014901/glif-run-outputs/l52kdr0j8m6reozc3aoo.jpg",
-        label: "New",
+      label: "New",
     },
     {
       title: "The Power of Lifelong Learning in Tech",
@@ -22,7 +32,6 @@ const Blog = () => {
       link: "https://dev.to/saurabhkurve/the-power-of-lifelong-learning-in-tech-3pd2",
       image:
         "https://media.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fkib5p3t0o5afc6jbj89c.jpg",
-      popular: true,
     },
     {
       title: "16 Essential Problem-Solving Patterns",
