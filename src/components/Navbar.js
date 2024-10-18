@@ -3,7 +3,6 @@ import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineDocument, HiOutlineMail } from "react-icons/hi";
 import { FaCoffee } from "react-icons/fa";
 import logo from "../assets/sklogo.png";
-import gif from "../assets/logogif.gif"
 import { Link } from "react-scroll";
 import { FaSquareXTwitter, FaTwitter } from "react-icons/fa6";
 import { ImTwitch, ImTwitter } from "react-icons/im";
@@ -16,8 +15,8 @@ const Navbar = () => {
 
   return (
     <div className="fixed w-full h-[80px] font-bold flex justify-between items-center px-4 bg-[#0a192f] text-gray-300 z-50">
-      <div className="-ml-1 mt-6">
-        <img src={gif} alt="logo" style={{ width: "120px" }} />
+      <div className="-ml-1">
+        <img src={logo} alt="logo" style={{ width: "80px" }} />
       </div>
 
       {/* menus */}
