@@ -3,12 +3,13 @@ import { FaArrowUp } from "react-icons/fa";
 import emailjs from "@emailjs/browser";
 
 const Contact = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
+  const form = useRef();
   const name = "Saurabh Kurve";
   const year = new Date().getFullYear();
-  const form = useRef();
+  const [isScrolled, setIsScrolled] = useState(false);
   const [successMessage, setSuccessMessage] = useState("");
   const [isButtonVisible, setIsButtonVisible] = useState(true);
+  const [isFormValid, setIsFormValid] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -30,11 +31,21 @@ const Contact = () => {
             setIsButtonVisible(true);
             setSuccessMessage("");
           }, 3000);
+          setIsFormValid(false);
         },
         (error) => {
           console.log("FAILED...", error.text);
         }
       );
+  };
+
+  const handleInputChange = () => {
+    const formData = new FormData(form.current);
+    const fromName = formData.get("from_name");
+    const fromEmail = formData.get("from_email");
+    const message = formData.get("message");
+
+    setIsFormValid(fromName && fromEmail && message);
   };
 
   const handleScrollToTop = () => {
@@ -66,6 +77,7 @@ const Contact = () => {
           ref={form}
           onSubmit={sendEmail}
           className="flex flex-col max-w-[600px] w-full"
+          onChange={handleInputChange}
         >
           <div className="pb-8">
             <p className="text-4xl font-bold inline border-b-4 border-pink-600 text-gray-300">
@@ -84,9 +96,9 @@ const Contact = () => {
             placeholder="Name"
           />
           <input
-            className="my-4 p-2 rounded-md bg-[#ccd6f6]"
+            className="!bg-[#ccd6f6] my-4 p-2 rounded-md "
             type="email"
-            name="from_name"
+            name="from_email"
             placeholder="email"
           />
           <textarea
@@ -100,7 +112,14 @@ const Contact = () => {
             </div>
           )}
           {isButtonVisible && (
-            <button className="text-white border-2  hover:bg-pink-600 hover:border-pink-600 px-4 py-2 my-8 mx-auto flex items-center transition-opacity duration-500 ease-in-out">
+            <button
+              className={`text-white border-2 px-4 py-2 my-8 mx-auto flex items-center transition-opacity duration-500 ease-in-out ${
+                isFormValid
+                  ? "bg-pink-600 hover:bg-pink-700 opacity-100"
+                  : "bg-gray-400 cursor-not-allowed opacity-50"
+              }`}
+              disabled={!isFormValid}
+            >
               Let's Collaborate
             </button>
           )}
