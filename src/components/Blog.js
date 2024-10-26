@@ -5,6 +5,16 @@ const Blog = () => {
 
   const blogPosts = [
     {
+      title: "Top 10 Best Practices for Writing Clean Code",
+      summary:
+        "A guide on essential practices for writing clean, maintainable code, including using meaningful names, keeping functions small, avoiding deep nesting, adhering to DRY principles, handling errors effectively, writing unit tests, and minimizing dependencies to enhance readability, scalability, and ease of maintenance.",
+      date: "October 23, 2024",
+      link: "https://dev.to/saurabhkurve/top-10-best-practices-for-writing-clean-code-1pmj",
+      image:
+        "https://dev-to-uploads.s3.amazonaws.com/uploads/articles/nidvboud16m59wdj9c6l.jpg",
+      label: "New",
+    },
+    {
       title: "Surpass Overconfidence: Your Coding Journey Awaits",
       summary:
         "An encouraging guide on overcoming feelings of inadequacy in coding, highlighting the importance of consistent practice, embracing challenges, focusing on personal growth, and recognizing that coding is a long-term journey, not a race.",
@@ -21,8 +31,7 @@ const Blog = () => {
       date: "October 15, 2024",
       link: "https://dev.to/saurabhkurve/top-5-sites-to-ace-your-tech-interviews-295e",
       image:
-        "https://res.cloudinary.com/dzkwltgyd/image/upload/v1729014901/glif-run-outputs/l52kdr0j8m6reozc3aoo.jpg",
-      label: "New",
+        "https://res.cloudinary.com/dzkwltgyd/image/upload/v1729014901/glif-run-outputs/l52kdr0j8m6reozc3aoo.jpg"
     },
     {
       title: "The Power of Lifelong Learning in Tech",
