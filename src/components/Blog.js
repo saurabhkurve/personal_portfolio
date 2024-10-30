@@ -5,6 +5,16 @@ const Blog = () => {
 
   const blogPosts = [
     {
+      title: "Best Practices and Pitfalls in Java Exception Handling",
+      summary:
+        "Effective exception handling in Java is key to building resilient, maintainable applications by ensuring that errors are managed gracefully rather than causing abrupt crashes. This guide covers best practices like using specific exceptions, logging errors, and avoiding common pitfalls to keep code clean and error-resistant.",
+      date: "October 30, 2024",
+      link: "https://dev.to/saurabhkurve/best-practices-and-pitfalls-in-java-exception-handling-37dk",
+      image:
+        "https://dev-to-uploads.s3.amazonaws.com/uploads/articles/7v0x3213sp686tmguua4.jpg",
+      label: "New",
+    },
+    {
       title: "Top 10 Best Practices for Writing Clean Code",
       summary:
         "A guide on essential practices for writing clean, maintainable code, including using meaningful names, keeping functions small, avoiding deep nesting, adhering to DRY principles, handling errors effectively, writing unit tests, and minimizing dependencies to enhance readability, scalability, and ease of maintenance.",
@@ -22,7 +32,6 @@ const Blog = () => {
       link: "https://dev.to/saurabhkurve/surpass-overconfidence-your-coding-journey-awaits-3o4b",
       image:
         "https://dev-to-uploads.s3.amazonaws.com/uploads/articles/i9wcqdo1ymezas3nlqpq.jpg",
-      label: "New",
     },
     {
       title: "Top 5 Sites to Ace Your Tech Interviews ",
@@ -31,7 +40,7 @@ const Blog = () => {
       date: "October 15, 2024",
       link: "https://dev.to/saurabhkurve/top-5-sites-to-ace-your-tech-interviews-295e",
       image:
-        "https://res.cloudinary.com/dzkwltgyd/image/upload/v1729014901/glif-run-outputs/l52kdr0j8m6reozc3aoo.jpg"
+        "https://res.cloudinary.com/dzkwltgyd/image/upload/v1729014901/glif-run-outputs/l52kdr0j8m6reozc3aoo.jpg",
     },
     {
       title: "The Power of Lifelong Learning in Tech",
