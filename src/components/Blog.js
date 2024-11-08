@@ -5,6 +5,16 @@ const Blog = () => {
 
   const blogPosts = [
     {
+      title: "Demystifying Java Bytecode : A Peek Under the Hood of the JVM",
+      summary:
+        "Effective understanding of Java bytecode empowers developers to optimize performance and gain insights into JVM execution, enhancing cross-platform compatibility and efficiency. This guide breaks down bytecode structure, JVM interpretation, and best practices in performance tuning, using tools like javap and ASM to elevate debugging and low-level optimization skills.",
+      date: "November 08, 2024",
+      link: "https://dev.to/saurabhkurve/demystifying-java-bytecode-a-peek-under-the-hood-of-the-jvm-3gn8",
+      image:
+        "https://dev-to-uploads.s3.amazonaws.com/uploads/articles/51p00kvfqrl5anackzft.jpg",
+      label: "New",
+    }, 
+    {
       title: "Best Practices and Pitfalls in Java Exception Handling",
       summary:
         "Effective exception handling in Java is key to building resilient, maintainable applications by ensuring that errors are managed gracefully rather than causing abrupt crashes. This guide covers best practices like using specific exceptions, logging errors, and avoiding common pitfalls to keep code clean and error-resistant.",
@@ -12,7 +22,7 @@ const Blog = () => {
       link: "https://dev.to/saurabhkurve/best-practices-and-pitfalls-in-java-exception-handling-37dk",
       image:
         "https://dev-to-uploads.s3.amazonaws.com/uploads/articles/7v0x3213sp686tmguua4.jpg",
-      label: "New",
+        popular: true,
     },
     {
       title: "Top 10 Best Practices for Writing Clean Code",
@@ -22,7 +32,6 @@ const Blog = () => {
       link: "https://dev.to/saurabhkurve/top-10-best-practices-for-writing-clean-code-1pmj",
       image:
         "https://dev-to-uploads.s3.amazonaws.com/uploads/articles/nidvboud16m59wdj9c6l.jpg",
-      label: "New",
     },
     {
       title: "Surpass Overconfidence: Your Coding Journey Awaits",
