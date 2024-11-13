@@ -5,6 +5,26 @@ const Blog = () => {
 
   const blogPosts = [
     {
+      title: "8 Traits to Stand Out at Work",
+      summary:
+        "This blog emphasizes eight essential traits to stand out in today’s job market: staying curious and adaptable, showing initiative, being dependable and honest, communicating clearly, embracing continuous learning, and demonstrating empathy. These qualities build trust, foster strong connections, and showcase your value as a reliable, innovative professional ready to lead and collaborate in dynamic environments.",
+      date: "November 13, 2024",
+      link: "https://dev.to/saurabhkurve/8-traits-to-stand-out-at-work-ckh",
+      image:
+        "https://dev-to-uploads.s3.amazonaws.com/uploads/articles/ytn71fyxbq7urgaxbcok.jpg",
+      label: "New",
+    },
+    {
+      title: "Building a Custom Framework in Java: From Dependency Injection to AOP",
+      summary:
+        "This blog guides you in building a custom Java framework with basic Dependency Injection (DI) and Aspect-Oriented Programming (AOP) for learning purposes. It covers implementing a simple DI container and AOP for logging, demonstrating how this lightweight framework can be useful for small projects or as an educational tool to understand Java frameworks better.",
+      date: "November 10, 2024",
+      link: "https://dev.to/saurabhkurve/building-a-custom-framework-in-java-from-dependency-injection-to-aop-3n2f",
+      image:
+        "https://dev-to-uploads.s3.amazonaws.com/uploads/articles/9880d5ubuokfouamxvb3.jpg",
+      label: "New",
+    },
+    {
       title: "Demystifying Java Bytecode : A Peek Under the Hood of the JVM",
       summary:
         "Effective understanding of Java bytecode empowers developers to optimize performance and gain insights into JVM execution, enhancing cross-platform compatibility and efficiency. This guide breaks down bytecode structure, JVM interpretation, and best practices in performance tuning, using tools like javap and ASM to elevate debugging and low-level optimization skills.",
@@ -12,8 +32,17 @@ const Blog = () => {
       link: "https://dev.to/saurabhkurve/demystifying-java-bytecode-a-peek-under-the-hood-of-the-jvm-3gn8",
       image:
         "https://dev-to-uploads.s3.amazonaws.com/uploads/articles/51p00kvfqrl5anackzft.jpg",
-      label: "New",
-    }, 
+    },
+    {
+      title: "Microservices with SpringBoot",
+      summary:
+        "Spring Boot enables Java developers to build scalable, resilient microservices by breaking complex systems into modular, independently deployable units. It simplifies development with tools for service discovery, API gateways, security, and tracing, making it ideal for high-demand applications like e-commerce and finance.",
+      date: "November 02, 2024",
+      link: "https://dev.to/saurabhkurve/microservices-with-springboot-51aa",
+      image:
+        "https://dev-to-uploads.s3.amazonaws.com/uploads/articles/02myltn26jjwo3241ypp.jpg",
+      popular: true,
+    },
     {
       title: "Best Practices and Pitfalls in Java Exception Handling",
       summary:
@@ -22,7 +51,7 @@ const Blog = () => {
       link: "https://dev.to/saurabhkurve/best-practices-and-pitfalls-in-java-exception-handling-37dk",
       image:
         "https://dev-to-uploads.s3.amazonaws.com/uploads/articles/7v0x3213sp686tmguua4.jpg",
-        popular: true,
+      popular: true,
     },
     {
       title: "Top 10 Best Practices for Writing Clean Code",
