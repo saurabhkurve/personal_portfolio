@@ -5,7 +5,7 @@ import { FaCoffee } from "react-icons/fa";
 import logo from "../assets/sklogo.png";
 import { Link } from "react-scroll";
 import { FaSquareXTwitter, FaTwitter } from "react-icons/fa6";
-import { ImTwitch, ImTwitter } from "react-icons/im";
+
 
 
 const Navbar = () => {
