@@ -11,7 +11,7 @@ const Blog = () => {
       date: "December 10, 2024",
       link: "https://dev.to/saurabhkurve/java-string-manipulation-common-methods-you-should-know-li3",
       image:
-        "https://dev-to-uploads.s3.amazonaws.com/uploads/articles/5gq04cwklc21l6tg439o.jpg",
+        "https://dev-to-uploads.s3.amazonaws.com/uploads/articles/rnel98slrajfs2wgx5zf.jpg",
       label: "New",
     },
     {
@@ -28,10 +28,9 @@ const Blog = () => {
       summary:
         "This blog guides you in building a custom Java framework with basic Dependency Injection (DI) and Aspect-Oriented Programming (AOP) for learning purposes. It covers implementing a simple DI container and AOP for logging, demonstrating how this lightweight framework can be useful for small projects or as an educational tool to understand Java frameworks better.",
       date: "November 10, 2024",
-      link: "https://dev.to/saurabhkurve/building-a-custom-framework-in-java-from-dependency-injection-to-aop-3n2f",
+      link: "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F5gq04cwklc21l6tg439o.jpg",
       image:
-        "https://dev-to-uploads.s3.amazonaws.com/uploads/articles/9880d5ubuokfouamxvb3.jpg",
-      label: "New",
+        "https://dev-to-uploads.s3.amazonaws.com/uploads/articles/9880d5ubuokfouamxvb3.jpg"
     },
     {
       title: "Demystifying Java Bytecode : A Peek Under the Hood of the JVM",
