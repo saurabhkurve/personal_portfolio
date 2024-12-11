@@ -5,14 +5,23 @@ const Blog = () => {
 
   const blogPosts = [
     {
+      title: "Java String Manipulation: Common Methods You Should Know",
+      summary:
+        "A comprehensive guide to mastering string manipulation in Java, covering essential techniques to process, format, and analyze text effectively. Learn how leveraging Java’s robust string handling capabilities can enhance your coding efficiency, streamline workflows, and address complex challenges with confidence.",
+      date: "December 10, 2024",
+      link: "https://dev.to/saurabhkurve/java-string-manipulation-common-methods-you-should-know-li3",
+      image:
+        "https://dev-to-uploads.s3.amazonaws.com/uploads/articles/5gq04cwklc21l6tg439o.jpg",
+      label: "New",
+    },
+    {
       title: "8 Traits to Stand Out at Work",
       summary:
         "This blog emphasizes eight essential traits to stand out in today’s job market: staying curious and adaptable, showing initiative, being dependable and honest, communicating clearly, embracing continuous learning, and demonstrating empathy. These qualities build trust, foster strong connections, and showcase your value as a reliable, innovative professional ready to lead and collaborate in dynamic environments.",
       date: "November 13, 2024",
       link: "https://dev.to/saurabhkurve/8-traits-to-stand-out-at-work-ckh",
       image:
-        "https://dev-to-uploads.s3.amazonaws.com/uploads/articles/ytn71fyxbq7urgaxbcok.jpg",
-      label: "New",
+        "https://dev-to-uploads.s3.amazonaws.com/uploads/articles/ytn71fyxbq7urgaxbcok.jpg"
     },
     {
       title: "Building a Custom Framework in Java: From Dependency Injection to AOP",
