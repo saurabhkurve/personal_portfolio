@@ -275,7 +275,7 @@ const Navbar = () => {
         </a>
         <a
           className="text-gray-300"
-          href="/cv/Saurabh_Kurve_Resume.pdf" // Ensure this path is correct
+          href="/cv/Saurabh_Kurve_Resume.pdf" 
           target="_blank"
           rel="noopener noreferrer"
         >
