@@ -7,12 +7,21 @@ const Blog = () => {
     {
       title: "Java String Manipulation: Common Methods You Should Know",
       summary:
+        "A comprehensive guide to understanding Java's inner workings, from code compilation to execution, exploring the JVM's role in delivering platform independence, security, and performance. Discover how Java's process ensures reliable and optimized applications across diverse use cases, empowering developers to create robust, scalable solutions.",
+      date: "December 25, 2024",
+      link: "https://dev.to/saurabhkurve/inside-java-from-code-to-execution-476g",
+      image:
+        "https://dev-to-uploads.s3.amazonaws.com/uploads/articles/wjnr2snfj527myjznivt.jpg",
+      label: "New",
+    },
+    {
+      title: "Java String Manipulation: Common Methods You Should Know",
+      summary:
         "A comprehensive guide to mastering string manipulation in Java, covering essential techniques to process, format, and analyze text effectively. Learn how leveraging Java’s robust string handling capabilities can enhance your coding efficiency, streamline workflows, and address complex challenges with confidence.",
       date: "December 10, 2024",
       link: "https://dev.to/saurabhkurve/java-string-manipulation-common-methods-you-should-know-li3",
       image:
         "https://dev-to-uploads.s3.amazonaws.com/uploads/articles/rnel98slrajfs2wgx5zf.jpg",
-      label: "New",
     },
     {
       title: "8 Traits to Stand Out at Work",
