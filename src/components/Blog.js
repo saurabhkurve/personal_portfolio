@@ -5,7 +5,7 @@ const Blog = () => {
 
   const blogPosts = [
     {
-      title: "Java String Manipulation: Common Methods You Should Know",
+      title: "Inside Java: From Code to Execution",
       summary:
         "A comprehensive guide to understanding Java's inner workings, from code compilation to execution, exploring the JVM's role in delivering platform independence, security, and performance. Discover how Java's process ensures reliable and optimized applications across diverse use cases, empowering developers to create robust, scalable solutions.",
       date: "December 25, 2024",
