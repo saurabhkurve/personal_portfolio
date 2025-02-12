@@ -3,7 +3,16 @@ import React, { useState } from "react";
 const Blog = () => {
   const [showAll, setShowAll] = useState(false);
 
-  const blogPosts = [
+  const blogPosts = [{
+    title: "Spring Data JPA vs. JDBC: Choosing the Right Database Tool",
+    summary:
+      "A comprehensive guide to choosing between Spring Data JPA and JDBC, exploring their strengths, limitations, and ideal use cases. Learn how JPA simplifies CRUD operations with ORM while JDBC offers fine-grained SQL control for performance-critical applications. Discover when to use each approach—or combine both—for scalable, efficient, and maintainable Java applications.",
+    date: "February 12, 2025",
+    link: "https://dev.to/saurabhkurve/spring-data-jpa-vs-jdbc-choosing-the-right-database-tool-487d",
+    image:
+      "https://dev-to-uploads.s3.amazonaws.com/uploads/articles/r7z83h5410rc7gqhxafx.jpg",
+    label: "New",
+  },
     {
       title: "Inside Java: From Code to Execution",
       summary:
@@ -12,7 +21,6 @@ const Blog = () => {
       link: "https://dev.to/saurabhkurve/inside-java-from-code-to-execution-476g",
       image:
         "https://dev-to-uploads.s3.amazonaws.com/uploads/articles/wjnr2snfj527myjznivt.jpg",
-      label: "New",
     },
     {
       title: "Java String Manipulation: Common Methods You Should Know",
